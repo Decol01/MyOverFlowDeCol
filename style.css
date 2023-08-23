@@ -5,22 +5,22 @@
 }
 :root {
   --text-color: white;
-  --bg-url: url(assets/Mobile/bg-mobile.jpg);
+  --bg-url: url(assets/Fotos/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(assets/Mobile/moon-stars.svg);
+  --switch-bg-url: url(assets/Fotos/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(assets/Mobile/bg-mobile-light.jpg);
+  --bg-url: url(assets/Fotos/bg-mobile-light.jpg);
   --stroke-color: rgba(0 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(assets/Mobile/sun.svg);
+  --switch-bg-url: url(assets/Fotos/sun.svg);
 }
 
 body {
@@ -153,4 +153,5 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+  
 }
