@@ -44,6 +44,7 @@ body * {
   margin: 56px auto 0px;
   padding: 0 24px;
 }
+
 /* Profile */
 #profile-photo {
   text-align: center;
@@ -64,9 +65,9 @@ body * {
 #switch {
   position: relative;
   width: 64px;
-
   margin: 4px auto;
 }
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -81,15 +82,15 @@ body * {
   transform: translateY(-50%);
 
   /* Padrao de animacao de volta */
-  animation: slide-back 0.2;
-}
-
-#switch button :hover {
-  outline: 1px solid var(--highlight-color);
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  animation: slide-in 0.4 forwards;
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -99,6 +100,7 @@ body * {
   /* surceface-color-dark-mode */
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
