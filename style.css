@@ -31,6 +31,7 @@ body {
 
   /* maneira simplicacada  - image - repeat - positon/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100%;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -78,10 +79,17 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  /* Padrao de animacao de volta */
+  animation: slide-back 0.2;
 }
+
+#switch button :hover{
+  outline: 1px solid var(--highlight-color)
+}
+
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4 forwards;
 }
 
 #switch span {
@@ -154,4 +162,33 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media queries, Ajuste das BG */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assests/Fotos/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assests/Fotos/bg-desktop-light.jpg);
+  }
+}
+/* Animacoes button dark and light */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    right: 0;
+  }
 }
